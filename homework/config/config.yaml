@@ -1,0 +1,19 @@
+server:
+  port: "8080"
+  host: "0.0.0.0"
+  mode: "debug"  # debug, release, test
+# Set TEST_DB_TYPE to one of: sqlite, mysql
+# Default is sqlite if not set
+dbType: sqlite
+
+database:
+  host: "localhost"
+  port: 3306
+  username: "root"
+  password: "password"
+  dbname: "testdb"
+
+jwt:
+  secret: "my-secret-key-change-in-production"
+  expire: "24h"
+
